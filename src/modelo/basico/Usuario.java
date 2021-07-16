@@ -2,6 +2,8 @@ package modelo.basico;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Transient;
 
@@ -18,6 +20,13 @@ public class Usuario {
     Banco de dados.
      */
     @Id
+    /*
+    No JPA, @GeneratedValue indica que os valores da variável abaixo da anotação
+    serão atribuídos automaticamente.
+    Já o '(strategy = GenerationType.IDENTITY)' auxilia com que, no momento que 
+    a tabela for criada no BD, o ID do usuário será do tipo auto_increment.
+     */
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
     /*
     Por padrão, o JPA define diversas características no banco de dados para variáveis.
