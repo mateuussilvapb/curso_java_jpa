@@ -7,7 +7,7 @@ import modelo.basico.Usuario;
 
 public class NovoUsuario {
 
-    public static void main(String[] args) {
+    public static void novoUsuario(String[] args) {
 
         /*
         Classe resposável por criar o EntityManager. Ela é necessária visto que
@@ -38,7 +38,10 @@ public class NovoUsuario {
         as alterações no banco de dados.
          */
         em.getTransaction().commit();
-
+        /*
+        É possível também coletar o id do usuário adicionado por último.
+         */
+        System.out.println("O ID do usuário adicionado é o de número: " + novoUsuario.getId());
         em.close();
         emf.close();
     }
