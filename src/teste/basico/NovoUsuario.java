@@ -7,7 +7,7 @@ import modelo.basico.Usuario;
 
 public class NovoUsuario {
 
-    public static void novoUsuario(String[] args) {
+    public static void nvUsuario(String[] args) {
 
         /*
         Classe resposável por criar o EntityManager. Ela é necessária visto que
@@ -21,7 +21,7 @@ public class NovoUsuario {
          */
         EntityManager em = emf.createEntityManager();
 
-        Usuario novoUsuario = new Usuario("Maria", "mariaaddesterro@gmail.com");
+        Usuario novoUsuario = new Usuario("Marcos", "marcospavs@gmail.com");
         /*
         O trecho 'em.getTransaction().begin();' indica ao código que uma transação
         com o banco de dados será iniciada nesse momento.

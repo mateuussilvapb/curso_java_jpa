@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Mateus/Documents/NetBeansProjects/curso_java_jpa/src/teste/basico/ObterUsuario.java</file>
-            <file>file:/C:/Users/Mateus/Documents/NetBeansProjects/curso_java_jpa/src/modelo/basico/Usuario.java</file>
-            <file>file:/C:/Users/Mateus/Documents/NetBeansProjects/curso_java_jpa/src/teste/basico/NovoUsuario.java</file>
+            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/java_JPA/src/teste/basico/AlterarUsuario1.java</file>
+            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/java_JPA/src/teste/basico/ObterUsuario.java</file>
+            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/java_JPA/src/modelo/basico/Usuario.java</file>
+            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/java_JPA/src/teste/basico/AlterarUsuario2.java</file>
         </group>
     </open-files>
 </project-private>

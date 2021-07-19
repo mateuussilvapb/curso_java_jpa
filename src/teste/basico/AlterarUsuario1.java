@@ -5,9 +5,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import modelo.basico.Usuario;
 
-public class ObterUsuario {
-
-    public static void obtUsuario(String[] args) {
+public class AlterarUsuario1 {
+    public static void altUsuario(String[] args) {
         /*
         Classe resposável por criar o EntityManager. Ela é necessária visto que
         é possível acessar mais de um banco de dados pelo JPA, o que requer mais 
@@ -19,14 +18,18 @@ public class ObterUsuario {
         e gerenciamento das entidades mapeadas.
          */
         EntityManager em = emf.createEntityManager();
+        
+        em.getTransaction().begin();
+        Usuario usuario = em.find(Usuario.class, 4L);
+        usuario.setNome("Teste");
+        usuario.setEmail("testee@gmail.com");
         /*
-        O método 'find' recupera uma informação do banco de dados de acordo com 
-        os parâmetros passados. O primeiro parâmetro representa a classe que deve
-        servir como base para o mapeamento. O segundo parâmetro é o item que
-        servirá como pesquisa.
-         */
-        Usuario usuario = em.find(Usuario.class, 1L);
-        System.out.println(usuario.getNome());
+        O comando 'merge' é o equivalente ao update. Com ele é possível alterar um
+        usuário já existente no banco de dados.
+        */
+        em.merge(usuario);
+        em.getTransaction().commit();
+        
         em.close();
         emf.close();
     }
