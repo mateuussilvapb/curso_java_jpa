@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/java_JPA/src/infra/DAO.java</file>
-            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/java_JPA/src/modelo/basico/Produto.java</file>
-            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/java_JPA/src/teste/basico/RemoverUsuario.java</file>
-            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/java_JPA/src/modelo/basico/Usuario.java</file>
+            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/java_JPA/src/infra/ProdutoDAO.java</file>
+            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/java_JPA/src/META-INF/persistence.xml</file>
+            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/java_JPA/src/teste/basico/ObterProdutos.java</file>
+            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/java_JPA/src/teste/basico/NovoProduto.java</file>
         </group>
     </open-files>
 </project-private>
