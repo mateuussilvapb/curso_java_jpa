@@ -6,7 +6,7 @@ import modelo.basico.Produto;
 
 public class ObterProdutos {
 
-    public static void main(String[] args) {
+    public static void obtProdutos(String[] args) {
         ProdutoDAO dao = new ProdutoDAO();
         List<Produto> produtos = dao.obterTodos();
 

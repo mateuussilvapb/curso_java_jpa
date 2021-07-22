@@ -6,6 +6,9 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <!-- Lista de entidades -->
         <class>modelo.modelo.basico.Usuario</class>
+        <class>modelo.modelo.basico.Produto</class>
+        <class>modelo.modelo.um_pra_um.Cliente</class>
+        <class>modelo.modelo.um_pra_um.Assento</class>
         <properties>
             <!-- Propriedades JDBC -->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
