@@ -10,7 +10,7 @@ public class NovoProduto {
         Produto produto = new Produto("Monitor", 799.99);
         dao.incluirAtomico(produto).fechar();
         System.out.println("ID fo produto: " + produto.getId());
-//        dao.abritT().incluir(produto).fecharT().fechar();
+//        dao.abrirT().incluir(produto).fecharT().fechar();
     }
 
 }

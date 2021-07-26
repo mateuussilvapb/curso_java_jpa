@@ -6,12 +6,12 @@ import modelo.um_pra_um.Cliente;
 
 public class NovoClienteAssento1 {
 
-    public static void main(String[] args) {
-        Assento assento = new Assento("16C");
-        Cliente cliente = new Cliente("Ana", assento);
+    public static void nca1(String[] args) {
+        Assento assento = new Assento("61B");
+        Cliente cliente = new Cliente("Renê", assento);
 
-        DAO<Object> dao = new DAO<>();
-        dao.abritT()
+        DAO<Object> dao = new DAO<>(Object.class);
+        dao.abrirT()
                 .incluir(assento)
                 .incluir(cliente)
                 .fecharT()

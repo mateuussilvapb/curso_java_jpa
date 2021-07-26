@@ -1,9 +1,11 @@
 package modelo.um_pra_um;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -15,7 +17,19 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    @OneToOne
+    /*
+    A anotação OneToOne representa o tio de relacionamento que esta classe tem
+    com a classe assento.
+    Cascade indica que o desenvolvedor que gerar uma operação em cascata. Pode 
+    ser informado apenas uma situação na qual a operação será realizada, ou um
+    conjunto de situações.
+    */
+    @OneToOne (cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    /*
+    JoinColumn é uma anotação específica para mapear campos que representam
+    junções entre tabelas.
+    */
+    @JoinColumn (name = "assento_id", unique = true)
     private Assento assento;
 
     public Cliente() {
