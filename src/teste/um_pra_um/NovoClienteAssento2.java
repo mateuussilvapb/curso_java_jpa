@@ -1,10 +1,12 @@
-package modelo.um_pra_um;
+package teste.um_pra_um;
 
 import infra.DAO;
+import modelo.um_pra_um.Assento;
+import modelo.um_pra_um.Cliente;
 
 public class NovoClienteAssento2 {
 
-    public static void main(String[] args) {
+    public static void nca2(String[] args) {
 
         Assento assento = new Assento("4D");
         Cliente cliente = new Cliente("Rodrigo", assento);
