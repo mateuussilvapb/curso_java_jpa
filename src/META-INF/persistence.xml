@@ -11,6 +11,10 @@
         <class>modelo.modelo.um_pra_um.Assento</class>
         <class>modelo.um_para_muitos.ItemPedido</class>
         <class>modelo.um_para_muitos.Pedido</class>
+        <class>modelo.muitos_para_muitos.Sobrinho</class>
+        <class>modelo.muitos_para_muitos.Tio</class>
+        <class>modelo.muitos_para_muitos.Filme</class>
+        <class>modelo.muitos_para_muitos.Ator</class>
         <properties>
             <!-- Propriedades JDBC -->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>

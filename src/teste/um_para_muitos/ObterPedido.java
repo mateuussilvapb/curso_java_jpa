@@ -6,7 +6,7 @@ import modelo.um_para_muitos.Pedido;
 
 public class ObterPedido {
 
-    public static void main(String[] args) {
+    public static void op(String[] args) {
         DAO<Pedido> dao = new DAO<>(Pedido.class);
         Pedido pedido = dao.obterPorID(1L);
 

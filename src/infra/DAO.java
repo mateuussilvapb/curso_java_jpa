@@ -11,8 +11,8 @@ O <E> deixa a classe genérica. Ou seja, qualquer outra classe que defina um obj
 poderá utilizá-la.
  */
 public class DAO<E> {
-    
-    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("exercicios-jpa");
+
+    private static EntityManagerFactory emf;
     private EntityManager em;
     private Class<E> classe;
 
@@ -41,26 +41,26 @@ public class DAO<E> {
         this.classe = classe;
         em = emf.createEntityManager();
     }
-    
+
     public DAO() {
         this(null);
     }
-    
+
     public DAO<E> abrirT() {
         em.getTransaction().begin();
         return this;
     }
-    
+
     public DAO<E> fecharT() {
         em.getTransaction().commit();
         return this;
     }
-    
+
     public DAO<E> incluir(E entidade) {
         em.persist(entidade);
         return this;
     }
-    
+
     public DAO<E> incluirAtomico(E entidade) {
         /*
         A linha abaixo só é possível devido os métodos invocados nela retornarem
@@ -69,7 +69,7 @@ public class DAO<E> {
         this.abrirT().incluir(entidade).fecharT();
         return this;
     }
-    
+
     public E obterPorID(Object id) {
         return em.find(classe, id);
     }
@@ -102,7 +102,7 @@ public class DAO<E> {
     public List<E> obterTodos() {
         return this.obterTodos(10, 0);
     }
-    
+
     public void fechar() {
         /*
         O 'emf' não pode ser fechado visto que é estático e, por isso, é utilizado
