@@ -6,7 +6,7 @@ import modelo.muitos_para_muitos.Filme;
 
 public class FilmeAtor {
 
-    public static void main(String[] args) {
+    public static void fm(String[] args) {
         Filme filmeA = new Filme("Star Wars Ep 4", 8.9);
         Filme filmeB = new Filme("O fugitivo", 8.1);
 
