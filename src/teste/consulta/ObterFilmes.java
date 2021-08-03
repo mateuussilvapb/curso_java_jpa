@@ -7,7 +7,7 @@ import modelo.muitos_para_muitos.Filme;
 
 public class ObterFilmes {
 
-    public static void obtFilmes(String[] args) {
+    public static void obtFilme(String[] args) {
         DAO<Filme> dao = new DAO<>(Filme.class);
         List<Filme> filmes = dao.consultar("filmes_nota_maior_que", "nota", 8.5);
         for (Filme filme : filmes) {

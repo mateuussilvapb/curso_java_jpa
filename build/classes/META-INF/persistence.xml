@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence         http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
-    <!-- Unidade de persistencia -->
-    <persistence-unit name="exercicios-jpa">
-        <!-- Implementação do JPA -->
-        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <mapping-file>META-INF/consultas.xml</mapping-file>
-        <!-- Lista de entidades -->
-        <class>modelo.modelo.basico.Usuario</class>
-        <class>modelo.modelo.basico.Produto</class>
-        <class>modelo.modelo.um_pra_um.Cliente</class>
-        <class>modelo.modelo.um_pra_um.Assento</class>
-        <class>modelo.um_para_muitos.ItemPedido</class>
-        <class>modelo.um_para_muitos.Pedido</class>
-        <class>modelo.muitos_para_muitos.Sobrinho</class>
-        <class>modelo.muitos_para_muitos.Tio</class>
-        <class>modelo.muitos_para_muitos.Filme</class>
-        <class>modelo.muitos_para_muitos.Ator</class>
-        <class>modelo.composicao.Fornecedor</class>
-        <class>modelo.composicao.Funcionario</class>
-        <class>modelo.composicao.Endereco</class>
-        <properties>
-            <!-- Propriedades JDBC -->
-            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/curso_java"/>
-            <property name="javax.persistence.jdbc.user" value="root"/>
-            <property name="javax.persistence.jdbc.password" value=""/>
-            <!-- Configurações específicas do Hibernate -->
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL57Dialect"/>
-            <property name="hibernate.hbm2ddl.auto" value="update"/>
-            <property name="hibernate.show_sql" value="true"/>
-            <property name="hibernate.format_sql" value="true"/>
-        </properties>
-    </persistence-unit>
+  <!-- Unidade de persistencia -->
+  <persistence-unit name="exercicios-jpa">
+    <!-- Implementação do JPA -->
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <mapping-file>META-INF/consultas.xml</mapping-file>
+    <!-- Lista de entidades -->
+    <class>modelo.modelo.basico.Usuario</class>
+    <class>modelo.modelo.basico.Produto</class>
+    <class>modelo.modelo.um_pra_um.Cliente</class>
+    <class>modelo.modelo.um_pra_um.Assento</class>
+    <class>aulas.modelo.muitos_para_muitos.Filme</class>
+    <class>aulas.modelo.muitos_para_muitos.Ator</class>
+    <class>aulas.modelo.muitos_para_muitos.Sobrinho</class>
+    <class>aulas.modelo.muitos_para_muitos.Tio</class>
+    <class>aulas.modelo.composicao.Endereco</class>
+    <class>aulas.modelo.composicao.Fornecedor</class>
+    <class>aulas.modelo.composicao.Funcionario</class>
+    <class>aulas.modelo.um_para_muitos.ItemPedido</class>
+    <class>aulas.modelo.um_para_muitos.Pedido</class>
+    <class>aulas.desafio.modelo.heranca.Aluno</class>
+    <class>aulas.desafio.modelo.heranca.AlunoBolsista</class>
+    
+    <properties>
+      <!-- Propriedades JDBC -->
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/curso_java"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <!-- Configurações específicas do Hibernate -->
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL57Dialect"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+    </properties>
+  </persistence-unit>
 </persistence>

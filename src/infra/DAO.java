@@ -21,16 +21,16 @@ public class DAO<E> {
     ou utilizando blocos estáticos.
     O bloco estático é executado apenas uma vez no momento da criação da classe.
      */
-    static {
-        try {
-            emf = Persistence.createEntityManagerFactory("exercicios-jpa");
-        } catch (Exception e) {
-            System.out.println("ERRO NO BLOCO ESTÁTICO DA CLASSE DAO: " + e);
-            /*
-            Também pode ser utilizado o log4j(api)
-             */
-        }
-    }
+//    static {
+//        try {
+//            emf = Persistence.createEntityManagerFactory("exercicios-jpa");
+//        } catch (Exception e) {
+//            System.out.println("ERRO NO BLOCO ESTÁTICO DA CLASSE DAO: " + e);
+//            /*
+//            Também pode ser utilizado o log4j(api)
+//             */
+//        }
+//    }
 
     /*
     Atributos de instância podem ser inicializados no construtor.

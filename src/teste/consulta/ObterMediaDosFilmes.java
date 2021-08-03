@@ -5,7 +5,7 @@ import modelo.consulta.NotaFilme;
 
 public class ObterMediaDosFilmes {
 
-    public static void obtMedFil(String[] args) {
+    public static void abt(String[] args) {
         DAO<NotaFilme> dao = new DAO<>(NotaFilme.class);
         NotaFilme nota = dao.consultarUm("ObterMediaDosFilmes");
         
