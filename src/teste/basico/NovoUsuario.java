@@ -7,7 +7,7 @@ import modelo.basico.Usuario;
 
 public class NovoUsuario {
 
-    public static void novoUsuario(String[] args) {
+    public static void nvUsu(String[] args) {
 
         /*
         Classe resposável por criar o EntityManager. Ela é necessária visto que

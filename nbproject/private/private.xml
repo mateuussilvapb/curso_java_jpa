@@ -3,9 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Mateus/Documents/NetBeansProjects/curso_java_jpa/src/teste/muitos_para_muitos/ObterTiosSobrinhos.java</file>
-            <file>file:/C:/Users/Mateus/Documents/NetBeansProjects/curso_java_jpa/src/META-INF/consultas.xml</file>
-            <file>file:/C:/Users/Mateus/Documents/NetBeansProjects/curso_java_jpa/src/META-INF/persistence.xml</file>
+            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/curso_java_jpa/src/teste/consulta/ObterMediaDosFilmes.java</file>
+            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/curso_java_jpa/src/infra/DAO.java</file>
+            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/curso_java_jpa/src/META-INF/consultas.xml</file>
+            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/curso_java_jpa/src/teste/consulta/ObterFilmes.java</file>
+            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/curso_java_jpa/src/META-INF/persistence.xml</file>
+            <file>file:/C:/Users/PBF/Documents/NetBeansProjects/curso_java_jpa/src/modelo/consulta/NotaFilme.java</file>
         </group>
     </open-files>
 </project-private>

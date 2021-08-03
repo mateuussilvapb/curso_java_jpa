@@ -16,6 +16,9 @@
         <class>modelo.muitos_para_muitos.Tio</class>
         <class>modelo.muitos_para_muitos.Filme</class>
         <class>modelo.muitos_para_muitos.Ator</class>
+        <class>modelo.composicao.Fornecedor</class>
+        <class>modelo.composicao.Funcionario</class>
+        <class>modelo.composicao.Endereco</class>
         <properties>
             <!-- Propriedades JDBC -->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>

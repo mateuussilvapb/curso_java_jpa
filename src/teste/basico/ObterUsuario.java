@@ -7,7 +7,7 @@ import modelo.basico.Usuario;
 
 public class ObterUsuario {
 
-    public static void main(String[] args) {
+    public static void obtUsu(String[] args) {
         /*
         Classe resposável por criar o EntityManager. Ela é necessária visto que
         é possível acessar mais de um banco de dados pelo JPA, o que requer mais 
